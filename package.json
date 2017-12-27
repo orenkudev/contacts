@@ -1,0 +1,17 @@
+{
+  "name": "trainologic",
+  "version": "1.0.0",
+  "description": "Trainologic Exam",
+  "main": "index.js",
+
+  "author": "Oren Kedem",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "http-server": "^0.10.0"
+  },
+
+  "scripts": {
+    "start": "http-server ./ -a localhost -p 8000 -c-1"
+  }
+}

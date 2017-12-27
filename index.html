@@ -1,0 +1,23 @@
+<html lang="en" ng-app="contactsApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainologic</title>
+
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/app/controllers/contacts-controller.js"></script>
+    <script src="/app/directives/contacts-directive.js"></script>
+    <script src="/app/app.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Contact Tree</h1>
+    <div ng-controller="ContactsCtrl">
+        <Contact ng-repeat="contact in contacts" item="contact" index="{{$index}}"></Contact>
+    </div>
+</body>
+
+</html>
